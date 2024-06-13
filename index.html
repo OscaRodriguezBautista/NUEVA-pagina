@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Zapato - Tienda de Zapatos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, white, lightgray);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container, .search-bar {
+            width: 80%;
+            max-width: 1200px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        .main-image {
+            max-width: 300px;
+            height: auto;
+            margin: auto;
+            display: block;
+        }
+        .intro-text {
+            margin-top: 20px;
+        }
+        .buttons a, .sneaker-card a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .social-media img, .search-bar img {
+            width: 30px;
+            margin: 0 10px;
+        }
+        .search-bar input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .cart {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sneaker-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .sneaker-card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px;
+            width: 300px;
+            padding: 20px;
+            text-align: left;
+        }
+        .sneaker-card img {
+            max-width: 100%;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .sneaker-card h3 {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .sneaker-card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .trend-text {
+            text-align: center;
+            font-size: 1.5em;
+            color: #333;
+            border: 2px solid #333;
+            padding: 10px;
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>EL ZAPATO</h1>
+        </div>
+        <img src="C:\Users\shu\Documents\logo zapato.png" alt="Logo">
+        <div class="intro-text">
+            <p>Bienvenidos a "El Zapato", la tienda en línea definitiva para los apasionados de los tenis. Nos especializamos en todo tipo de calzado y ofrecemos una amplia selección de otros estilos y marcas prestigiosas. Encuentra los lanzamientos más exclusivos y productos auténticos de alta calidad.</p>
+        </div>
+        <div class="buttons">
+            <a href="https://www.nike.com/mx/w/nuevos-lanzamientos-3n82y">Nuevo</a>
+            <a href="https://www.nike.com/mx/w/jordan-37eef">Jordan</a>
+            <a href="https://www.nike.com/mx/w/ninos-rebajas-calzado-3yaepzv4dhzy7ok?cp=14625409597_search_%7Cnike%7C11751570869%7C112828060934%7Cb%7Cc%7CES%7Cpure%7C485443770143&gad_source=1&gclid=CjwKCAjw65-zBhBkEiwAjrqRMLGftI5nK7SNagjJ7A1zk_zHInvQkAiRPzqPa6ZV919yKah0H2wQoxoCSJ8QAvD_BwE&gclsrc=aw.ds">Nike</a>
+            <a href="https://www.adidas.mx/calzado">Adidas</a>
+            <a href="https://www.newbalancemexico.com/c/lo-mas-nuevo/">Más Marcas</a>
+            <a href="https://www.nike.com/mx/w/rebajas-3yaepz5k5r2z6fvtl">Ofertas</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/nike/?hl=es"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/600px-Instagram_logo_2022.svg.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/nike/?locale=es_LA"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/600px-2023_Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="https://x.com/Nike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="https://img.freepik.com/vector-gratis/twitter-nuevo-logotipo-2023-x-vector-fondo-blanco_1017-45422.jpg?size=338&ext=jpg&ga=GA1.1.44546679.1716681600&semt=ais_user" alt="Twitter"></a>
+            <a href="https://www.nike.com/es/help/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png" alt="Email"></a>
+        </div>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar...">
+        <img src="https://cdn-icons-png.flaticon.com/512/64/64673.png" alt="Search Icon">
+    </div>
+    <div class="trend-text">Tendencias</div>
+    <div class="sneaker-section">
+        <div class="sneaker-card">
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/1440b2943e1503cba2c737e88229a10a.jpg?imageView2/2/w/800/q/70/format/webp" alt="Sneaker 1">
+            <h3>Black Shoe</h3>
+            <p>ofrecen comodidad y estilo en cada paso.</p>
+            <a href="comprar_producto.html">Comprar</a>
+        </div>
+        <div class="sneaker-card">
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/bc757501de1bbaa9e28b947b6754b30e.jpg?imageView2/2/w/800/q/70/format/webp" alt="Sneaker 2">
+            <h3>Clasico</h3>
+            <p> El clásico con un diseño icónico y la mejor calidad.</p>
+            <a href="comprar_producto2.html">Comprar</a>
+        </div>
+        <div class="sneaker-card">
+            <img src="https://img.kwcdn.com/product/fancy/6cc3fa2c-97d4-4d64-b942-0e3afb3d470c.jpg?imageView2/2/w/800/q/70/format/webp" alt="Sneaker 3">
+            <h3>White Shoe</h3>
+            <p>Con un diseño llamativo, destacan en cualquier lugar.</p>
+            <a href="comprar_producto3.html">Comprar</a>
+        </div>
+        <div class="sneaker-card">
+            <img src="https://img.kwcdn.com/product/fancy/e8061ad1-cd58-4e15-b328-09dbdcb7d8ac.jpg?imageView2/2/w/800/q/70/format/webp" alt="Sneaker 4">
+            <h3>Fosfo Fosfo</h3>
+            <p>combinan estilo y funcionalidad.</p>
+            <a href="comprar_producto4.html">Comprar</a>
+        </div>
+        <div class="sneaker-card">
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/519ca4672e60569b00ec3683582178ea.jpg?imageView2/2/w/800/q/70/format/webp" alt="Sneaker 5">
+            <h3>Clasico Mexicano</h3>
+            <p>ofrecen una excelente tracción y soporte.</p>
+            <a href="comprar_producto5.html">Comprar</a>
+        </div>
+    </div>
+    <div class="cart">
+        <img src="C:\Users\shu\Downloads\carrito-de-compras.png" alt="Cart Icon">
+    </div>
+</body>
+</html>

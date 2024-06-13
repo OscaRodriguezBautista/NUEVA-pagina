@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Zapato - Comprar Producto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, white, lightgray);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        .product-image {
+            max-width: 300px;
+            height: auto;
+            margin: auto;
+            display: block;
+        }
+        .product-details {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .product-details h2 {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .product-details p {
+            font-size: 1em;
+            color: #666;
+        }
+        .purchase-section {
+            margin-top: 20px;
+        }
+        .purchase-section label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 1em;
+            color: #333;
+        }
+        .purchase-section input, .purchase-section select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .purchase-section button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Comprar Producto</h1>
+        </div>
+        <img class="product-image" src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/519ca4672e60569b00ec3683582178ea.jpg?imageView2/2/w/800/q/70/format/webp" alt="Producto">
+        <div class="product-details">
+            <h2>Clasico Mexicano</h2>
+            <p>Ofrecen una excelente tracción y soporte.</p>
+        </div>
+        <div class="purchase-section">
+            <label for="size">Talla</label>
+            <select id="size">
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+            </select>
+            <label for="quantity">Cantidad</label>
+            <input type="number" id="quantity" value="1" min="1">
+            <label for="address">Dirección de envío</label>
+            <input type="text" id="address" placeholder="Ingrese su dirección">
+            <button onclick="alert('Compra realizada con éxito!')">Realizar Compra</button>
+        </div>
+    </div>
+</body>
+</html>
